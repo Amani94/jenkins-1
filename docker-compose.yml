@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  app:
+    image: https://hub.docker.com/r/2194/jenkins:latest
+    restart: always
+    volumes:
+      - jenkins_home:/var/jenkins_home
+      
+volumes:
+  jenkins_home:
+    driver: local
